@@ -1,0 +1,105 @@
+body{
+    background-image: linear-gradient(rgba(12, 104, 165, 0.37),rgba(6, 91, 131, 0.466)),url(./Weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-position: center;
+    height: 92vh;
+}
+.weather_main{
+    background-color: rgba(119, 218, 218, 0.63);
+    max-width: 600px;
+    margin:50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+.search_form{
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    border: 2px solid rgb(65, 65, 138);
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 2.5rem;
+}
+.search_btn{
+    background-color: #475fa0;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.search_btn:hover{
+    background-color: #d3da7c;
+}
+.city_date_section{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.city_date_section .city{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+.city_date_section .date{
+    background-color: rgba(194, 182, 159, 0.664);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.temp_info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temp_info .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.temp_info .description i{
+   font-size: 1.5rem;
+   opacity: 0.8;
+}
+.temp_info .description descrption_text{
+   font-size: 1.5rem;
+}
+.temp_info .temp{
+    font-size: 5rem;
+}
+.additional_info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.wind_info,.humidity_info,.visbility_info{
+    background-color: #627ecac0;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(rgba(43, 73, 209, 0.39)) 0px 3px 8px;
+}
+.additional_info i{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+.wind_info div, .humidity_info div ,.visbility_info div{
+    text-align: center;
+}
+
